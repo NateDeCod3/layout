@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Main Container */
+.main-container {
+  background-color: #C7F0C7;
+  border: 5px solid #238000;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* HEADER */
+.header-section {
+  background-color: #ADD8E6;
+  border: 5px solid #2000FF;
+  display: grid;
+  grid-template-areas: 'hA hB hC';
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.header-boxA {
+  background-color: #FCDAB9;
+  border: 5px solid #F78072;
+  grid-area: hA;
+  height: 100px;
+  margin: 4px;
+}
+
+.header-boxB {
+  background-color: #FCDAB9;
+  border: 5px solid #F78072;
+  display: grid;
+  grid-area: hB;
+  grid-template-areas: 'hB1 hB2';
+  height: 100px;
+  padding: 10px;
+  margin: 4px;
+}
+.header-boxB1 {
+  background-color: #FAC0CB;
+  border: 5px solid #F40105;
+  grid-area: hB1;
+}
+.header-boxB2 {
+  background-color: #FAC0CB;
+  border: 5px solid #F40105;
+  grid-area: hB2;
+}
+
+.header-boxC {
+  background-color: #FCDAB9;
+  border: 5px solid #F78072;
+  grid-area: hC;
+  height: 100px;
+  padding: 10px;
+  margin: 4px;
+}
+
+/* CONTENT */
+.content-section {
+  display: grid;
+  grid-gap: 15px 10px;
+  grid-template-areas: 'cL cR1' 'cL cR2';
+  margin-bottom: 20px;
+}
+.content-boxL {
+  background-color: #FABBBB;
+  border: 5px solid #A52B2A;
+  grid-area: cL;
+  height: 300px;
+  margin-right: 4px;
+}
+.content-boxR1 {
+  background-color: #FABBBB;
+  border: 5px solid yellow;
+  border: 5px solid #A52B2A;
+  grid-area: cR1;
+}
+.content-boxR2 {
+  background-color: #FABBBB;
+  border: 5px solid yellow;
+  border: 5px solid #A52B2A;
+  grid-area: cR2;
+}
+
+/* FOOTER */
+.footer-section {
+  background-color: #ADD8E6;
+  border: 5px solid #2000FF;
+  display: grid;
+  grid-template-areas: 'fA fA fB fC fD fD';
+  height: 120px;
+  padding: 10px;
+}
+.footer-boxA {
+  background-color: #dfd9fd;
+  border: 5px solid #6A5ACD;
+  grid-area: fA;
+  margin: 4px;
+}
+.footer-boxB {
+  background-color: #FCDAB9;
+  border: 5px solid #F78072;
+  grid-area: fB;
+  margin: 4px;
+}
+.footer-boxC {
+  background-color: #FCDAB9;
+  border: 5px solid #F78072;
+  grid-area: fC;
+  margin: 4px;
+}
+.footer-boxD {
+  background-color: #dfd9fd;
+  border: 5px solid #6A5ACD;
+  grid-area: fD;
+  margin: 4px;
+}
+
+/* NAME */
+h1 {
+  text-align: center;
+}
